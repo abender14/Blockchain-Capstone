@@ -8,7 +8,6 @@ Created on Mon Jan 20 22:01:25 2020
 # Importing the libraries
 import numpy as np
 import pandas as pd
-import pickle
 import h2o
 
 #load dataset for model
