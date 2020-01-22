@@ -17,7 +17,7 @@ dataset = pd.read_csv('h2o_full_data.csv')
 h2o.connect()
 
 # load the model
-h2o_model = h2o.load_model("GBM_1_AutoML_20200120_221705")
+h2o_model = h2o.load_model("GBM_1_AutoML_20200121_172134")
 
 #test a result
 test_data = [0, 2,18,10,5000,3000,1,12,10,5,6]
