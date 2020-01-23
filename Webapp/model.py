@@ -14,7 +14,7 @@ import h2o
 dataset = pd.read_csv('h2o_full_data.csv')
 
 #connect to h2o
-h2o.connect()
+h2o.init(ip="127.0.0.1", port ="8080", bind_to_localhost= False)
 
 # load the model
 h2o_model = h2o.load_model("GBM_1_AutoML_20200121_172134")
