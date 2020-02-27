@@ -26,7 +26,7 @@ def block():
     return render_template('blog.html')
 
 @app.route('/company',methods=['GET'])
-def block():
+def company():
     return render_template('contact.html')
 
 @app.route('/demo',methods=['GET'])
