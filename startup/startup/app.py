@@ -1,5 +1,5 @@
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect
 import pickle
 import pandas as pd
 
@@ -11,9 +11,41 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
+    return render_template('index.html')
+
+@app.route('/predict')
+def bitly():
+    return render_template('index.html')
+
+@app.route('/model',methods=['GET'])
+def ml():
     return render_template('service.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/blockchain',methods=['GET'])
+def block():
+    return render_template('blog.html')
+
+@app.route('/demo',methods=['GET'])
+def demo():
+    return redirect("http://ec2-54-196-204-142.compute-1.amazonaws.com:8080/")
+
+@app.route('/profile',methods=['GET'])
+def profile():
+    return render_template("portfolio.html")
+
+@app.route('/about',methods=['GET'])
+def about():
+    return render_template("about.html")
+
+@app.route('/details',methods=['GET'])
+def details():
+    return render_template("portfolio_details.html")
+
+@app.route('/elements',methods=['GET'])
+def elements():
+    return render_template("elements.html")
+
+@app.route('/model',methods=['POST'])
 def predict():
     '''
     For rendering results on HTML GUI
