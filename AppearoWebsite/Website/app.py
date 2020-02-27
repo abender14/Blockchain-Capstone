@@ -7,7 +7,7 @@ import pandas as pd
 fullxTrain = pd.read_csv('fullxTrain.csv', nrows=1)
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = open('model.json', 'rb')
 
 @app.route('/')
 def home():
@@ -31,7 +31,7 @@ def company():
 
 @app.route('/demo',methods=['GET'])
 def demo():
-    return redirect("http://ec2-54-196-204-142.compute-1.amazonaws.com:8080/")
+    return redirect("http://ec2-54-204-237-16.compute-1.amazonaws.com:8080/")
 
 @app.route('/profile',methods=['GET'])
 def profile():
