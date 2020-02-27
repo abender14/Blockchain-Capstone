@@ -25,6 +25,10 @@ def ml():
 def block():
     return render_template('blog.html')
 
+@app.route('/company',methods=['GET'])
+def block():
+    return render_template('contact.html')
+
 @app.route('/demo',methods=['GET'])
 def demo():
     return redirect("http://ec2-54-196-204-142.compute-1.amazonaws.com:8080/")
