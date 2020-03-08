@@ -3625,6 +3625,18 @@ h3 {
     padding-top: 100px;
     padding-bottom: 70px;
   }
+
+  .our_team_area {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.our_team_area .team_text h4 {
+  font-size: 24px;
+  color: #615CFD;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 /* line 13, ../../Arafath/CL/December/233. Startup/HTML/scss/_mission.scss */
