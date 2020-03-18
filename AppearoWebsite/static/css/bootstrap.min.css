@@ -223,8 +223,10 @@ figure {
 }
 
 img {
-    vertical-align: middle;
-    border-style: none
+  vertical-align: middle;
+  border-style: none
+  height: auto;
+  width:100%;
 }
 
 svg:not(:root) {
