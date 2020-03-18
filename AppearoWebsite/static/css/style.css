@@ -1668,7 +1668,8 @@ h3 {
 }
 
 /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
-.about_area::before {
+
+/*  .about_area::before {
   content: '';
   background-image: url(../img/about/about.png);
   left: 0;
@@ -1680,21 +1681,22 @@ h3 {
   position: absolute;
   background-size: cover;
   background-position: center center;
-}
-
+} */
+/*
 @media (max-width: 767px) {
   /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
-  .about_area::before {
+/*  .about_area::before {
+    display: none;
+  }
+}
+/*
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
+/*  .about_area::before {
     display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 4, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
-  .about_area::before {
-    display: none;
-  }
-}
 
 /* line 23, ../../Arafath/CL/December/233. Startup/HTML/scss/_about.scss */
 .about_area .about_thumb {
