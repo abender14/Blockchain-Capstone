@@ -655,7 +655,7 @@ h3 {
 .section_title span {
   position: relative;
   z-index: 3;
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 500;
   color: #615CFD;
   text-transform: capitalize;
@@ -6947,5 +6947,5 @@ h6 {
 .bradcam_LV_7{background-image: url(../img/banner/postits.jpg)}
 .bradcam_LV_8{background-image: url(../img/banner/sunriseovercity.jpg)}
 .bradcam_LV_9{background-image: url(../img/banner/teamwork.jpg)}
-
+.bradcam_LV_10{background-image: url(../img/banner/Hands.jpg)}
 /*# sourceMappingURL=style.css.map */
